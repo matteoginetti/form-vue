@@ -1,3 +1,5 @@
+import { useDark, useToggle } from '@vueuse/core'
+
 const isDark = useDark({
 	attribute: 'class',
 	valueDark: 'theme theme--dark',

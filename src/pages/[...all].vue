@@ -15,7 +15,7 @@
 </template>
 
 <script setup lang="ts">
-	import { useAttrs } from 'vue'
+	import { useAttrs, computed } from 'vue'
 
 	// get route parameters
 	const attrs = useAttrs() as { all: string[] }

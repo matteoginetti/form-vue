@@ -5,7 +5,6 @@ import ESLint from "vite-plugin-eslint";
 import Stylelint from "vite-plugin-stylelint";
 import Pages from "vite-plugin-pages";
 import Components from "unplugin-vue-components/vite";
-import AutoImport from "unplugin-auto-import/vite";
 import VueI18n from "@intlify/unplugin-vue-i18n/vite";
 import { VitePWA } from "vite-plugin-pwa";
 import { VolverResolver } from "@volverjs/ui-vue/resolvers/unplugin";
@@ -53,24 +52,6 @@ export default defineConfig({
                     directives: true,
                 }),
             ],
-        }),
-
-        // https://github.com/antfu/unplugin-auto-import
-        AutoImport({
-            imports: [
-                "vue",
-                "vue-router",
-                "vue-i18n",
-                "@vueuse/head",
-                "@vueuse/core",
-                "pinia",
-            ],
-            dts: "src/auto-imports.d.ts",
-            dirs: ["src/composables", "src/constants"],
-            vueTemplate: true,
-            eslintrc: {
-                enabled: true,
-            },
         }),
 
         // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n

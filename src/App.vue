@@ -1,5 +1,7 @@
 <script setup lang="ts">
 	import '~/composables/useTheme'
+	import { useColor } from '~/composables/useColor'
+	import { useHead } from '@vueuse/head'
 
 	const { colorHex } = useColor('brand')
 

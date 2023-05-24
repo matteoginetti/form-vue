@@ -11,6 +11,7 @@
 		"moduleResolution": "Node",
 		"resolveJsonModule": true,
 		"noUnusedLocals": true,
+		"noImplicitAny": false,
 		"strictNullChecks": true,
 		"forceConsistentCasingInFileNames": true,
 		"types": ["vite/client", "vite-plugin-pages/client"],
