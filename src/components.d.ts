@@ -19,5 +19,6 @@ declare module '@vue/runtime-core' {
     VvAction: typeof import('@volverjs/ui-vue/vv-action')['default']
     VvButton: typeof import('@volverjs/ui-vue/vv-button')['default']
     VvButtonGroup: typeof import('@volverjs/ui-vue/vv-button-group')['default']
+    VvCard: typeof import('@volverjs/ui-vue/vv-card')['default']
   }
 }

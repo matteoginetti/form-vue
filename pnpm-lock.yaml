@@ -3,7 +3,8 @@ lockfileVersion: 5.4
 specifiers:
   '@intlify/unplugin-vue-i18n': ^0.10.0
   '@vitejs/plugin-vue': ^4.1.0
-  '@volverjs/style': ^0.1.8
+  '@volverjs/form-vue': 0.0.13-beta.4
+  '@volverjs/style': 0.1.11-beta.1
   '@volverjs/ui-vue': 0.0.5
   '@vue/eslint-config-typescript': ^11.0.3
   '@vueuse/core': ^10.1.2
@@ -29,9 +30,11 @@ specifiers:
   vue-i18n: ^9.2.2
   vue-router: ^4.1.6
   vue-tsc: ^1.4.2
+  zod: ^3.21.4
 
 dependencies:
-  '@volverjs/style': 0.1.10
+  '@volverjs/form-vue': 0.0.13-beta.4_@volverjs+ui-vue@0.0.5
+  '@volverjs/style': 0.1.11-beta.1
   '@volverjs/ui-vue': 0.0.5
   '@vueuse/core': 10.1.2_vue@3.3.4
   '@vueuse/head': 1.1.26_vue@3.3.4
@@ -39,6 +42,7 @@ dependencies:
   vue: 3.3.4
   vue-i18n: 9.2.2_vue@3.3.4
   vue-router: 4.2.1_vue@3.3.4
+  zod: 3.21.4
 
 devDependencies:
   '@intlify/unplugin-vue-i18n': 0.10.0_vue-i18n@9.2.2
@@ -2201,8 +2205,23 @@ packages:
       typescript: 5.0.4
     dev: true
 
-  /@volverjs/style/0.1.10:
-    resolution: {integrity: sha512-jahozQ7azL5q2QiyJj2GdNwY4R9lJ/m8wbC49J8FtqYiS4SAi9FZZsIHHK6lGLUWgfzQk5wbilD+u3GKFhQjdw==}
+  /@volverjs/form-vue/0.0.13-beta.4_@volverjs+ui-vue@0.0.5:
+    resolution: {integrity: sha512-I378fV6+9mJYWnECA+a//r2haX6CJLEN7BrTqh7lR0/TffmNJ91sZToKKzK4MN1ZIrh2V76vaSFyXylHhwh+SQ==}
+    engines: {node: '>= 16.x'}
+    peerDependencies:
+      '@volverjs/ui-vue': 0.*
+    dependencies:
+      '@volverjs/ui-vue': 0.0.5
+      '@vueuse/core': 10.1.2_vue@3.3.4
+      ts-dot-prop: 2.1.2
+      vue: 3.3.4
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+    dev: false
+
+  /@volverjs/style/0.1.11-beta.1:
+    resolution: {integrity: sha512-+rKX2TbtEg1yuM1aJO2LDsvOJfNIy+rN/Rhs0YjhcAqbsNtwRckZtJszoXk8k4TlJc0HaxiVYSVBK6+fmWnEGA==}
     engines: {node: '>= 12.x'}
     dev: false
 
@@ -5517,6 +5536,18 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
+  /ts-dot-prop/2.1.2:
+    resolution: {integrity: sha512-YyBdUfp3SavXpKHLumacXDS6JoIT/235ZpkKXFa0l2ZNFu/ok077W7H4GBypk4cga7gZoVALfJrsYpJsVS1BdA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      ts-util-is: 2.0.2
+    dev: false
+
+  /ts-util-is/2.0.2:
+    resolution: {integrity: sha512-04T15Tok4y9VJlJsi9bLhqxmUosDFBKDo93VdZf3BModUcJfEzea0L+SMPNlSLpPr+vcNU3vHwxnfJl5wkOqhg==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
+
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
     dev: true
@@ -6308,4 +6339,8 @@ packages:
 
   /zhead/2.0.4:
     resolution: {integrity: sha512-V4R94t3ifk9AURym6OskbKcnowzgp5Z88tkoL/NF67vyryNxC62u6mx5F1Ux4oh4+YN7FFmKYEyWy6m5kfPH6g==}
+    dev: false
+
+  /zod/3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
     dev: false

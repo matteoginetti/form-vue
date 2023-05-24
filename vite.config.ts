@@ -24,7 +24,7 @@ export default defineConfig({
 
         // https://github.com/gxmari007/vite-plugin-eslint
         ESLint({
-            exclude: ["**/node_modules/**", "**/@volverjs/ui-vue/**"],
+            exclude: ["**/node_modules/**", '**/@volverjs/**'],
         }),
 
         // https://github.com/ModyQyW/vite-plugin-stylelint
