@@ -56,8 +56,7 @@ export default defineConfig({
 
         // https://github.com/intlify/bundle-tools/tree/main/packages/vite-plugin-vue-i18n
         VueI18n({
-            runtimeOnly: true,
-            compositionOnly: true,
+            defaultSFCLang: "yaml",
             include: [path.resolve(__dirname, "locales/**")],
         }),
 

@@ -18,7 +18,7 @@
 		<div class="grid grid-cols-3 flex-1">
 			<div
 				class="col-span-2 flex flex-col items-center justify-center py-lg my-auto">
-				<div class="uppercase text-xl py-md">User creation</div>
+				<div class="uppercase text-xl py-md">{{ $t('label.createUser') }}</div>
 				<div class="rounded-md form-shadow">
 					<VvForm v-model="formData" class="p-md" @submit="onSubmit">
 						<div class="grid grid-cols-2 gap-md items-start">
@@ -40,7 +40,7 @@
 								label="Email" />
 							<VvFormField type="number" name="age" label="Age" />
 							<VvFormField
-								type="combobox"
+								type="text"
 								name="role"
 								label="Role"
 								:options="[

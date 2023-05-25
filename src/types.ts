@@ -10,3 +10,5 @@ interface AppContext<HasRouter extends boolean = true> {
 }
 
 export type UserModule = (ctx: AppContext) => void
+
+export type AppModule = (ctx: AppContext) => void
