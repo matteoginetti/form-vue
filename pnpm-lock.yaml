@@ -10,6 +10,9 @@ dependencies:
   '@volverjs/ui-vue':
     specifier: 0.0.5
     version: 0.0.5
+  '@volverjs/zod-vue-i18n':
+    specifier: 0.0.4-beta.2
+    version: 0.0.4-beta.2
   '@vueuse/core':
     specifier: ^10.1.2
     version: 10.1.2(vue@3.3.4)
@@ -31,9 +34,6 @@ dependencies:
   zod:
     specifier: ^3.21.4
     version: 3.21.4
-  zod-vue-i18n:
-    specifier: 0.0.3-beta.4
-    version: 0.0.3-beta.4
 
 devDependencies:
   '@intlify/unplugin-vue-i18n':
@@ -2284,6 +2284,15 @@ packages:
       - encoding
       - supports-color
       - utf-8-validate
+    dev: false
+
+  /@volverjs/zod-vue-i18n@0.0.4-beta.2:
+    resolution: {integrity: sha512-btSkQq+WnK8nSF9UaO3hhIfFiNHuZXkgRvIemaYHjjxvOuN9NpwAt8Yhkro38kiE/8Rx6cD7Dm/YeSkE2dcGjw==}
+    engines: {node: '>= 16.x'}
+    dependencies:
+      vue: 3.3.4
+      vue-i18n: 9.2.2(vue@3.3.4)
+      zod: 3.21.4
     dev: false
 
   /@vue/compiler-core@3.3.4:
@@ -6378,15 +6387,6 @@ packages:
 
   /zhead@2.0.4:
     resolution: {integrity: sha512-V4R94t3ifk9AURym6OskbKcnowzgp5Z88tkoL/NF67vyryNxC62u6mx5F1Ux4oh4+YN7FFmKYEyWy6m5kfPH6g==}
-    dev: false
-
-  /zod-vue-i18n@0.0.3-beta.4:
-    resolution: {integrity: sha512-Dwb+LcX4rrpHlbM2uhA7G6GPFCp6Zcz8KsnwGL5Q+H8pynvbAXUJAQ0T3EYIIjEJirnNm4P7E00CgqLww5VT7Q==}
-    engines: {node: '>= 16.x'}
-    dependencies:
-      vue: 3.3.4
-      vue-i18n: 9.2.2(vue@3.3.4)
-      zod: 3.21.4
     dev: false
 
   /zod@3.21.4:

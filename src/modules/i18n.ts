@@ -1,8 +1,8 @@
 import type { AppModule } from '~/types'
 import { createI18n } from 'vue-i18n'
 // import { z as Zod } from 'zod'
-// import { makeZodI18nMap } from 'zod-vue-i18n'
-// import it from 'zod-vue-i18n/locales/it.json'
+// import { makeZodI18nMap } from '@volverjs/zod-vue-i18n'
+// import it from '@volverjs/zod-vue-i18n/locales/it.json'
 
 // Import i18n resources
 // https://vitejs.dev/guide/features.html#glob-import
@@ -48,6 +48,7 @@ export const i18n = createI18n({
 		},
 	},
 }) */
+
 /* i18n.global.mergeLocaleMessage('it', {
 	errors: {
 		...it,
