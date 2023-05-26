@@ -7,9 +7,9 @@ export enum UserRole {
 }
 
 export const UserSchema = z.object({
-	firstName: z.string(),
-	lastName: z.string(),
-	nickname: z.string(),
+	firstName: z.string().min(1),
+	lastName: z.string().min(1),
+	nickname: z.string().default('').optional(),
 	age: z.number().int().min(18),
 	email: z.string().email(),
 	role: z.nativeEnum(UserRole),
