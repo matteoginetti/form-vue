@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     PjSidebar: typeof import('./components/PjSidebar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    VvAccordion: typeof import('@volverjs/ui-vue/vv-accordion')['default']
     VvAction: typeof import('@volverjs/ui-vue/vv-action')['default']
     VvButton: typeof import('@volverjs/ui-vue/vv-button')['default']
     VvButtonGroup: typeof import('@volverjs/ui-vue/vv-button-group')['default']

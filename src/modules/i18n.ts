@@ -2,6 +2,7 @@ import type { AppModule } from '~/types'
 import { createI18n } from 'vue-i18n'
 // import { z as Zod } from 'zod'
 // import { makeZodI18nMap } from 'zod-vue-i18n'
+// import it from 'zod-vue-i18n/locales/it.json'
 
 // Import i18n resources
 // https://vitejs.dev/guide/features.html#glob-import
@@ -31,12 +32,25 @@ export const i18n = createI18n({
 	messages,
 })
 
-/* Zod.setErrorMap(makeZodI18nMap(i18n))
+// Zod.setErrorMap(makeZodI18nMap(i18n))
 
-i18n.global.mergeLocaleMessage('it', {
+/* i18n.global.mergeLocaleMessage('it', {
 	errors: {
 		invalidTypeReceivedUndefined: 'Questo campo è obbligatorio',
 		invalidEnumValue: 'Sono previste solo: {options}',
+		invalidString: {
+			email: 'Mail non valida',
+		},
+		tooSmall: {
+			number: {
+				inclusive: 'Inserire il valore maggiore o uguale a {minimum}',
+			},
+		},
+	},
+}) */
+/* i18n.global.mergeLocaleMessage('it', {
+	errors: {
+		...it,
 	},
 }) */
 
